@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:exam_app/src/api/api_services.dart';
-import 'package:exam_app/src/feature/details/details_page.dart';
-import 'package:exam_app/src/feature/widgets/custom_button.dart';
-import 'package:exam_app/src/feature/widgets/custom_person_tile.dart';
+import 'package:exam_app/feature/details/details_page.dart';
+import 'package:exam_app/feature/widgets/custom_button.dart';
+import 'package:exam_app/feature/widgets/custom_person_tile.dart';
 import 'package:exam_app/src/model/person.dart';
 import 'package:exam_app/utils/extension.dart';
 
@@ -41,7 +41,7 @@ class _HomepageWebState extends State<HomepageWeb> {
     });
     getPerson(pages).then(
       (value) => setState(() {
-        persons = persons!.sublist(persons!.length - 10);
+        persons = persons!.sublist(persons!.length - 20);
       }),
     );
   }
@@ -95,7 +95,7 @@ class _HomepageWebState extends State<HomepageWeb> {
                   CustomButton(
                     onPressed: () {
                       if (pages != 10) {
-                        pages -= 10;
+                        pages -= 20;
                         getNextPage();
                       }
                     },
@@ -103,8 +103,8 @@ class _HomepageWebState extends State<HomepageWeb> {
                   ),
                 CustomButton(
                   onPressed: () {
-                    if (pages != 40) {
-                      pages += 10;
+                    if (pages != 70) {
+                      pages += 20;
                       getNextPage();
                     } else {
                       context.showSnackBar(
