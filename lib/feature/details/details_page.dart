@@ -1,9 +1,9 @@
+import 'package:exam_app/feature/widgets/custom_image.dart';
+import 'package:exam_app/src/model/person.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:exam_app/src/feature/details/address_details.dart';
-import 'package:exam_app/src/feature/widgets/custom_text.dart';
-import 'package:exam_app/src/feature/widgets/custom_image.dart';
-import 'package:exam_app/src/model/person.dart';
+import 'package:exam_app/feature/details/address_details.dart';
+import 'package:exam_app/feature/widgets/custom_text.dart';
 
 class DetailsPage extends StatelessWidget {
   const DetailsPage({
@@ -41,6 +41,8 @@ class DetailsPage extends StatelessWidget {
             CustomText(content: person.phone),
             CustomText(content: person.gender),
             AddressDetails(address: person.address),
+            CustomText(content: person.address.longitude.toString()),
+            CustomText(content: person.address.latitude.toString()),
             CustomText(
               content: person.website,
               isLink: true,
