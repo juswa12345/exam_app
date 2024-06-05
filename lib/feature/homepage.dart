@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:exam_app/src/feature/homepage_mobile.dart';
-import 'package:exam_app/src/feature/homepage_web.dart';
+import 'package:exam_app/feature/homepage_mobile.dart';
+import 'package:exam_app/feature/homepage_web.dart';
 import 'package:exam_app/utils/adaptive_stateless_widget.dart';
 
 class Homepage extends AdaptiveStatelessWidget {
