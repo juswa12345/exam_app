@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:exam_app/src/feature/widgets/custom_text.dart';
-import 'package:exam_app/src/feature/widgets/custom_image.dart';
+import 'package:exam_app/feature/widgets/custom_text.dart';
+import 'package:exam_app/feature/widgets/custom_image.dart';
 import 'package:exam_app/src/model/person.dart';
 
 class CustomPersonTile extends StatelessWidget {
